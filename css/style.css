@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 75%;
+    margin: 20px auto;
+    padding: auto;
+    background-color: rgba(6, 247, 86, 0.7);
+    position: relative;
+}
+
+#button_1 {
+    border: none;
+    background-color: rgba(6, 247, 86, 0);
+    width: 200px;
+    height: 100px;
+    font-size: 30px;
+}
+
+#button_1:hover {
+    background-color: green;
+}
+
+#space_color {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    display: none;
+}
+
+#show0 {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+#show1 {
+    color: yellow;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+#show2 {
+    color: green;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+#show3 {
+    color: blue;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+#show4 {
+    color: orange;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+#show5 {
+    color: purple;
+    font-size: 20px;
+}
+
+span {
+    color: rgb(12, 3, 3);
+    font-size: 30px;
+    font-family: cursive;
+}
+
+#hide_button {
+    margin: 0px;
+    display: none;
+    border: none;
+    background-color: rgba(6, 247, 86, 0);
+    width: 200px;
+    height: 100px;
+    font-size: 30px;
+}
+
+#hide_button:hover {
+    background-color: green;
+}
+
+/* Animation */
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    font-size: 40px;
+    margin-top: 25px;
+    transition: all 1s ease-in-out;
+    animation: ani 9s infinite;
+}
+
+@keyframes ani {
+    0% {
+        left: 0;
+        color: yellow;
+    }
+    50% {
+        left: 56%;
+        color: blue;
+    }
+    100% {
+        left: 0;
+        color: red;
+    }
+}
